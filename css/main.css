@@ -2,11 +2,40 @@ body {
     font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 900;
     font-size: 1em;
+
+    display: grid;
+
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
 }
 
-.header {
-    background-color: rgb(10, 93, 10);
-    text-transform: uppercase;
+header  {
+    grid-area: header;
+    background-color: rgb(7, 77, 44);
+    font-size: .7em;
 }
 
-.
+header nav ul{
+    display: flex;
+    justify-content: end;
+}
+
+header nav ul li{
+    padding: 10px;
+    list-style-type: none;
+}
+
+header a {
+    color: white;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
