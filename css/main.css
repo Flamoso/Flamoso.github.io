@@ -14,22 +14,29 @@ body {
 
 header  {
     grid-area: header;
-    background-color: rgb(7, 77, 44);
-    font-size: .7em;
+    background-color: #378fae;
+    font-size: 1em;
+
 }
 
-header nav ul{
+nav ul{
     display: flex;
     justify-content: end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+
 }
 
-header nav ul li{
+nav ul li{
     padding: 10px;
     list-style-type: none;
 }
 
 header a {
     color: white;
+    text-decoration: none;
+
 }
 
 main {
@@ -38,4 +45,8 @@ main {
 
 footer {
     grid-area: footer;
+}
+
+nav li:hover {
+    transform: scale(1.2);
 }
