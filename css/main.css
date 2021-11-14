@@ -10,27 +10,42 @@ body {
     "nav nav nav"
     "main main main"
     "footer footer footer";
+    margin: 0;
 }
 
 header  {
     grid-area: header;
-    background-color: #378fae;
-    font-size: 1em;
+    background-image: url(../public/pictures/couple.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
 
+nav {
+    height: 700px;
+}
+
+.nav-top-container {
+    display: flex;
+    flex-direction: row;
+}
+nav img {
+    opacity: 0.5;
 }
 
 nav ul{
-    display: flex;
-    justify-content: end;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 100px;
+    margin-left: 350px;
+    height: auto;
+    display: block;
+}   
 
-}
 
 nav ul li{
-    padding: 10px;
     list-style-type: none;
+    display: inline;
+    padding: 25px;
+    font-size: 2em;
+    opacity: 0.8;
 }
 
 header a {
@@ -39,24 +54,58 @@ header a {
 
 }
 
+.nav-mid-container {
+    padding-top: 180px;
+    padding-bottom: 100px;
+    opacity: 0.8;
+}
+
+#nav-tit1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+#nav-tit2 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.filler1{
+    background-color: #0076BA;
+    height: 28px;
+}
+
 main {
     grid-area: main;
+   
+}
+
+.main-sec1 {
+}
+
+#main-tit1{
+    text-align: center;
+    font-size: 3em;
+}
+
+#main-par1{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.main-sec2{
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.712);
 }
 
 footer {
     grid-area: footer;
 }
 
-nav li:hover {
-    transform: scale(1.2);
+nav ul li:hover {
+    opacity: 1 ;    
     text-decoration: underline;
-}
-
-.titulo {
-    margin-right: 88%;
-}
-
-.titulo:hover {
-    color: #378fae;
-    scale(1.2);
+    transform: scale(1.2);
 }
